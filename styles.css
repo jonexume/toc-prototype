@@ -135,9 +135,7 @@ a {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
-  gap: clamp(32px, 7vw, 96px);
+  display: flex;
   align-items: center;
   min-height: calc(100vh - 132px);
   padding-top: clamp(44px, 6vw, 76px);
@@ -240,65 +238,6 @@ h3 {
 .button.secondary {
   color: white;
   background: var(--ink);
-}
-
-.hero-visual {
-  position: relative;
-  min-height: 460px;
-  background: transparent;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: none;
-  overflow: hidden;
-}
-
-.hero-visual::before,
-.hero-visual::after {
-  display: none;
-}
-
-.visual-panel {
-  position: absolute;
-  z-index: 1;
-  width: min(78%, 330px);
-  padding: 18px;
-  color: white;
-  background: rgba(0, 0, 0, 0.72);
-  border: 1px solid rgba(249, 178, 51, 0.32);
-  border-radius: 8px;
-  backdrop-filter: blur(12px);
-}
-
-.visual-panel span,
-.visual-panel strong {
-  display: block;
-}
-
-.visual-panel span {
-  color: var(--gold);
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.visual-panel strong {
-  margin-top: 8px;
-  font-size: 1.25rem;
-}
-
-.visual-one {
-  top: 38px;
-  left: 28px;
-}
-
-.visual-two {
-  right: 24px;
-  bottom: 136px;
-}
-
-.visual-three {
-  bottom: 28px;
-  left: 34px;
 }
 
 .impact-strip {
@@ -693,10 +632,6 @@ textarea {
     min-height: auto;
   }
 
-  .hero-visual {
-    min-height: 430px;
-  }
-
   .impact-strip,
   .program-grid,
   .workflow {
@@ -729,30 +664,6 @@ textarea {
 
   h2 {
     font-size: 2.15rem;
-  }
-
-  .hero-visual {
-    display: none;
-  }
-
-  .visual-panel {
-    position: relative;
-    width: auto;
-  }
-
-  .visual-one {
-    top: auto;
-    left: auto;
-  }
-
-  .visual-two {
-    right: auto;
-    bottom: auto;
-  }
-
-  .visual-three {
-    left: auto;
-    bottom: auto;
   }
 
   .impact-strip,
