@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologists of Color | Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Technologists of Color home">
+        <img class="brand-logo" src="assets/toc-long-logo.png" alt="Technologists of Color" />
+        <span>
+          <small>Atlanta's Black tech community</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#programs">Programs</a>
+        <a href="#donate">Donate</a>
+        <a href="#newsletter">Newsletter</a>
+        <button class="nav-action" type="button" data-open-panel="login">Login</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero page-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Connect. Inform. Teach. Mobilize.</p>
+          <h1>Building the next chapter of Black tech leadership.</h1>
+          <p>
+            Technologists of Color brings professionals, founders, students, career changers,
+            and partners together through events, programs, and pathways into technology.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#events">Explore Events</a>
+            <button class="button secondary" type="button" data-open-panel="submit-event">Submit an Event</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Community technology collage">
+          <div class="visual-panel visual-one">
+            <span>Workshop</span>
+            <strong>Coding While Black</strong>
+          </div>
+          <div class="visual-panel visual-two">
+            <span>Network</span>
+            <strong>1,500+ community members</strong>
+          </div>
+          <div class="visual-panel visual-three">
+            <span>Partner</span>
+            <strong>Career access + sponsor pathways</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-strip" aria-label="Community impact">
+        <article>
+          <strong>2012</strong>
+          <span>Founded in Atlanta</span>
+        </article>
+        <article>
+          <strong>4</strong>
+          <span>Core community pillars</span>
+        </article>
+        <article>
+          <strong>6</strong>
+          <span>Priority website journeys</span>
+        </article>
+        <article>
+          <strong>24/7</strong>
+          <span>Community discovery hub</span>
+        </article>
+      </section>
+
+      <section id="events" class="page-section events-section">
+        <div class="section-heading events-heading">
+          <p class="eyebrow">Events</p>
+          <h2>Find what is happening next.</h2>
+          <p>
+            A searchable event hub for ToC meetups, partner events, career sessions, workshops,
+            and community submissions after admin approval.
+          </p>
+        </div>
+        <div class="event-tools">
+          <label>
+            Search events
+            <input id="event-search" type="search" placeholder="Search by title, city, topic..." />
+          </label>
+          <div class="filter-group" aria-label="Filter events">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="toc">ToC</button>
+            <button class="filter-button" type="button" data-filter="community">Community</button>
+            <button class="filter-button" type="button" data-filter="virtual">Virtual</button>
+          </div>
+        </div>
+        <div id="event-list" class="event-list">
+          <article class="event-card" data-type="toc" data-keywords="coding workshop atlanta developers">
+            <div class="date-chip"><span>Jul</span><strong>18</strong></div>
+            <div>
+              <p class="tag">ToC Hosted</p>
+              <h3>Coding While Black: Build Night</h3>
+              <p>Hands-on collaboration for developers, analysts, builders, and career changers.</p>
+              <span>Atlanta, GA · 6:30 PM</span>
+            </div>
+          </article>
+          <article class="event-card" data-type="community" data-keywords="career product management community">
+            <div class="date-chip"><span>Aug</span><strong>06</strong></div>
+            <div>
+              <p class="tag">Community Submitted</p>
+              <h3>Product Careers Roundtable</h3>
+              <p>Moderated conversation with product leaders on transitioning into product roles.</p>
+              <span>Hybrid · Russell Innovation Center</span>
+            </div>
+          </article>
+          <article class="event-card" data-type="virtual" data-keywords="ai data virtual remote learning">
+            <div class="date-chip"><span>Aug</span><strong>21</strong></div>
+            <div>
+              <p class="tag">Virtual</p>
+              <h3>AI Tools for Community Builders</h3>
+              <p>A practical session on using AI responsibly for research, operations, and outreach.</p>
+              <span>Online · 7:00 PM</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="page-section split-section">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Rooted in community, designed for momentum.</h2>
+          <p>
+            ToC exists to make sure African Americans are among the technology influencers,
+            builders, and decision-makers shaping the future. The refreshed site should make
+            that mission visible, measurable, and easy to join.
+          </p>
+        </div>
+        <div class="pillar-grid">
+          <article><strong>Connect</strong><span>Bring professionals, founders, students, and career changers together.</span></article>
+          <article><strong>Inform</strong><span>Surface opportunities, trends, jobs, and resources.</span></article>
+          <article><strong>Teach</strong><span>Create learning paths through workshops and programs.</span></article>
+          <article><strong>Mobilize</strong><span>Activate mentors, sponsors, and volunteers.</span></article>
+        </div>
+      </section>
+
+      <section id="programs" class="page-section">
+        <div class="section-heading">
+          <p class="eyebrow">Programs</p>
+          <h2>Programs that turn community into outcomes.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <span>01</span>
+            <h3>Meetups</h3>
+            <p>Regular gatherings around trends, tools, and conversations that matter to Black technologists.</p>
+          </article>
+          <article class="program-card">
+            <span>02</span>
+            <h3>Happy Hours</h3>
+            <p>Low-pressure networking for professionals, newcomers, founders, and partner organizations.</p>
+          </article>
+          <article class="program-card">
+            <span>03</span>
+            <h3>Coding While Black</h3>
+            <p>Collaborative learning sessions for developers, system engineers, data scientists, and learners.</p>
+          </article>
+          <article class="program-card">
+            <span>04</span>
+            <h3>Laptops for Techs</h3>
+            <p>Partner-supported equipment access for people pursuing careers and skills in technology.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="donate" class="page-section donate-section">
+        <div>
+          <p class="eyebrow">Donate</p>
+          <h2>Fuel access, events, and opportunity.</h2>
+          <p>
+            Donations can support workshops, student access, laptops, community programs,
+            and the operational backbone needed to keep ToC growing.
+          </p>
+        </div>
+        <form class="donation-box">
+          <label>
+            Donation amount
+            <select>
+              <option>$25 - Community supporter</option>
+              <option>$100 - Workshop sponsor</option>
+              <option>$500 - Program builder</option>
+              <option>Custom amount</option>
+            </select>
+          </label>
+          <label class="check-row">
+            <input type="checkbox" checked />
+            Make this monthly
+          </label>
+          <button class="button primary" type="button">Continue to Secure Donation</button>
+        </form>
+      </section>
+
+      <section id="newsletter" class="page-section newsletter-section">
+        <div>
+          <p class="eyebrow">Newsletter</p>
+          <h2>Stay close to the opportunities.</h2>
+          <p>Get events, jobs, programs, partner announcements, and community spotlights.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email address" aria-label="Email address" />
+          <select aria-label="Newsletter preference">
+            <option>All updates</option>
+            <option>Events only</option>
+            <option>Jobs and opportunities</option>
+            <option>Sponsor and volunteer updates</option>
+          </select>
+          <button class="button primary" type="button">Sign Up</button>
+        </form>
+      </section>
+
+      <section class="page-section admin-preview">
+        <div class="section-heading">
+          <p class="eyebrow">Moderation Model</p>
+          <h2>Approved submitters keep the events page useful.</h2>
+        </div>
+        <div class="workflow">
+          <article><strong>1</strong><span>Create account</span></article>
+          <article><strong>2</strong><span>Verify email</span></article>
+          <article><strong>3</strong><span>Admin approves submitter</span></article>
+          <article><strong>4</strong><span>Event submitted for review</span></article>
+          <article><strong>5</strong><span>Admin publishes or requests edits</span></article>
+        </div>
+      </section>
+    </main>
+
+    <aside id="action-panel" class="action-panel" aria-hidden="true">
+      <div class="panel-card">
+        <button class="panel-close" type="button" aria-label="Close panel">×</button>
+        <div data-panel-view="login">
+          <p class="eyebrow">Member Access</p>
+          <h2>Login or request submitter approval.</h2>
+          <form class="stacked-form">
+            <input type="email" placeholder="Email address" />
+            <input type="password" placeholder="Password" />
+            <button class="button primary" type="button">Login</button>
+            <button class="button secondary" type="button">Request Approval</button>
+          </form>
+        </div>
+        <div data-panel-view="submit-event" hidden>
+          <p class="eyebrow">Event Submission</p>
+          <h2>Submit an event for review.</h2>
+          <form class="stacked-form">
+            <input type="text" placeholder="Event title" />
+            <input type="datetime-local" />
+            <input type="text" placeholder="Location or virtual link" />
+            <textarea placeholder="Short event description"></textarea>
+            <input type="url" placeholder="Registration link" />
+            <button class="button primary" type="button">Send to Admin Review</button>
+          </form>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <img class="footer-logo" src="assets/toc-long-logo.png" alt="Technologists of Color" />
+      <span>Prototype for discussion · Built for mobile, moderation, and community growth.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
